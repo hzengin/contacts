@@ -1,0 +1,15 @@
+*.class
+*.log
+.cache
+.history
+.lib/
+dist/*
+target/
+project/boot/
+/project/project/
+/project/target/
+/target/
+.idea/
+/project/.sbtserver
+/project/.sbtserver.lock
+
