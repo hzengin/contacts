@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<contacts>
+    <contact>
+        <id>1</id>
+        <name>Han</name>
+        <lastName>Solo</lastName>
+        <phone>+000000000001</phone>
+    </contact>
+    <contact>
+        <id>2</id>
+        <name>Leia</name>
+        <lastName>Organa</lastName>
+        <phone>+000000000002</phone>
+    </contact>
+    <contact>
+        <id>3</id>
+        <name>Luke</name>
+        <lastName>Skywalker</lastName>
+        <phone>+000000000003</phone>
+    </contact>
+</contacts>
