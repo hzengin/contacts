@@ -17,6 +17,14 @@ class ArgsTest extends FlatSpec with Matchers {
     util.parseArgs(args).files.get.apply(1) should be ("b.xml")
   }
 
+  it should "detect `search` command" in {
+    val args = Array("search")
+    util.parseArgs(args).files should be (None)
+    util.parseArgs(args).name should be (None)
+    util.parseArgs(args).inAppSearch.get should be (true)
+
+  }
+
   it should "detect that invalid arguments if exists" in {
     val args1 = Array("--try a.xml")
     util.parseArgs(args1).files should be (None)
@@ -27,7 +35,6 @@ class ArgsTest extends FlatSpec with Matchers {
     val args3 = Array("--find-by-name --import ads")
     util.parseArgs(args3).files should be (None)
     util.parseArgs(args3).name should be (None)
-
 
   }
 

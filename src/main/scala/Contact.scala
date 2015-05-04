@@ -19,7 +19,9 @@ case class Contact(id: Option[BSONObjectID], name: String, lastName: String, pho
   }
 
   override def toString: String = {
-    s"First Name: $name \nLast Name: $lastName \nPhone(s): \n " +  phones.foldLeft("")(_ + _ + " ") }
+    s"First Name: $name \nLast Name: $lastName \nPhone(s): \n ${phones.foldLeft("")(_ + _ + " ")} \n"
+  }
+
 }
 
 object Contact {

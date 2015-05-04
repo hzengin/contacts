@@ -1,9 +1,9 @@
-# contactsc
+# contacts
 contacts just a simple application for importing contacts from xml files and retrieving them.
 
 ## Features
 Two basic features, 
-* Search existing contacts: search for given name, case sensitive.
+* Search existing contacts: search for given name, case insensitive.
 * Import from XML: parse and import contacts from given files.
 
 ## Requirements
@@ -35,6 +35,9 @@ Configuration parameters for MongoDB connection are in `src/main/scala/Config.sc
 
 * to find a contact: 
 ```./contacts --find-by-name Name```
+
+* to find contacts in a interactive way
+```./contacts search```
 
 ## Testing
 Project using ScalaTest for unit tests, run them by
