@@ -44,5 +44,5 @@ Project using ScalaTest for unit tests, run them by
 `sbt test`
 
 ## Notes
-* I used "reading whole file into memory" method instead of using streams to read XML files; using streams would give a big advantage against importing huge files and would be more suitable for a log management application but for a contacts management application I thought that it would be a huge overkill.
+* I used "reading whole file into memory" method instead of using streams to read XML files; using streams would give a big advantage against importing huge files and would be more suitable for a log management application but for a contacts management application I thought that it would be a huge overkill. Besides overkilling fact, using stream parsing(event-based xml parsing) and ReactiveMongo's non-blocking write operations together means checking against duplications is not possible and that doesn't cover givenchallenge document due to given case about duplications
 * I didn't implemented any validation on files to be imported because challege document didn't mentioned of it.
